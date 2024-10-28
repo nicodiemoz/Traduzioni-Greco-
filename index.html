@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sito di Traduzione Greco</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Traduzioni Greco - Italiano</h1>
+
+    <!-- Menu per selezionare la categoria -->
+    <div id="category-selector">
+      <label for="category">Scegli categoria:</label>
+      <select id="category" onchange="changeCategory()">
+        <option value="all">Tutto</option>
+        <option value="nouns">Nomi</option>
+        <option value="adjectives">Aggettivi</option>
+        <option value="verbs">Verbi</option>
+      </select>
+    </div>
+
+    <div id="translation-box">
+      <button id="toggle-mode">Modalità: Greco → Italiano</button>
+      <div id="card">
+        <span id="text">Χαίρετε</span>
+        <button onclick="showTranslation()">Mostra Traduzione</button>
+      </div>
+    </div>
+
+    <div id="chat">
+      <h2>Chat Utenti</h2>
+      <input type="text" id="username" placeholder="Nome utente">
+      <input type="text" id="message" placeholder="Messaggio">
+      <button onclick="sendMessage()">Invia</button>
+      <div id="chat-box"></div>
+    </div>
+
+    <a href="mailto:tuoemail@example.com" id="contact">Contattami</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
